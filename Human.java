@@ -1,7 +1,7 @@
 public class Human {
     // Data members
     private String name;
-    private int age;
+    private long age;
     private String gender;
     private int height;
     private String hairColor;
@@ -29,7 +29,8 @@ public class Human {
         return name;
     }
 
-    public int getAge() {
+    public long getAge() {
+        age = age + (Time.getElapsedTime() / 1000000000);
         return age;
     }
 
